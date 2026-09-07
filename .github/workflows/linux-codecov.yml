@@ -87,8 +87,8 @@ jobs:
       - name: Build library and tests
         run: cmake --build --preset=unixlike-clang-debug-static
 
-      # - name: Build code coverage
-      #   run: cmake --build --preset=unixlike-clang-debug-static --target=faker-ccov-all
+      - name: Build code coverage
+        run: cmake --build --preset=unixlike-clang-debug-static --target=faker-ccov-all
 
 
       # - name: Generate code coverage report
